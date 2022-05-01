@@ -6,9 +6,9 @@ Read World Cooordinate System parameters from a `.wcs` file, such as those writt
 
 ## Install
 
-`pip install wcsfile`
+`pip install git+https://github.com/will-henney/wcsfile.git`
 
-(Currently aspirational only, since it has not been submitted to PyPI yet.)
+It needs to be installed from github since it has not been submitted to PyPI yet.
 
 ## How to use
 
@@ -75,7 +75,7 @@ Or it can be used to initialize a WCS object.
 from astropy.wcs import WCS
 
 w = WCS(wcsdict)
-w
+w 1,
 ```
 
     WARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 49797.000000 from DATE-OBS.
@@ -99,5 +99,4 @@ w
 
 ```python
 assert w.wcs.lattyp == "DEC"
-
 ```
