@@ -75,7 +75,7 @@ Or it can be used to initialize a WCS object.
 from astropy.wcs import WCS
 
 w = WCS(wcsdict)
-w 1,
+w
 ```
 
     WARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 49797.000000 from DATE-OBS.
@@ -100,3 +100,8 @@ w 1,
 ```python
 assert w.wcs.lattyp == "DEC"
 ```
+
+## Python Library Dependencies
+
+- toml
+- astropy (for usage examples and tests only)
